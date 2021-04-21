@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo Responsivo</title>
+    <script src="https://kit.fontawesome.com/79b8d3f265.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-diamond" aria-hidden="true"></i></span>
+                        <span class="title">
+                            <h2>Brand Name</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-house-user"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Consumidores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></span>
+                        <span class="title">Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                        <span class="title">Senha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="togglemenu()"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Pesquisar">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="./assets/imgs/jonathanFerreira.jpg">
+                </div>
+            </div>
+            
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1.042</div>
+                        <div class="cardName">Visualizações Diárias</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Vendas</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">208</div>
+                        <div class="cardName">Comentários</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">R$ 7,050</div>
+                        <div class="cardName">Faturamento</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Últimos pedidos</h2>
+                        <a href="#" class="btn">Visualizar Todos</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Produto</td>
+                                <td>Preço</td>
+                                <td>Pagamento</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Box - The Witcher</td>
+                                <td>R$240</td>
+                                <td>Confirmado</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box - As Crônicas de Gelo e Fogo</td>
+                                <td>R$180</td>
+                                <td>Aguardando</td>
+                                <td><span class="status pending">Pendente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box - Trilogia O Senhor dos Anéis</td>
+                                <td>R$140</td>
+                                <td>Confirmado</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box - Harry Potter</td>
+                                <td>R$170</td>
+                                <td>Confirmado</td>
+                                <td><span class="status inprogress">Em Andamento</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box Nórdicos: Os Melhores Contos e Lendas</td>
+                                <td>R$35</td>
+                                <td>Cancelado</td>
+                                <td><span class="status return">Cancelado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box - A divina comédia</td>
+                                <td>R$96</td>
+                                <td>Aguardando</td>
+                                <td><span class="status pending">Pendente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box - Sherlock Holmes</td>
+                                <td>R$70</td>
+                                <td>Confirmado</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box - Percy Jackson e os Olimpianos</td>
+                                <td>R$119</td>
+                                <td>Confirmado</td>
+                                <td><span class="status inprogress">Em Andamento</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Box - Diário de um banana</td>
+                                <td>R$169</td>
+                                <td>Confirmado</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Últimos visitantes</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./assets/imgs/imgP1.png"></div></td>
+                                <td><h4>Consumidora A <br><span>Brasil</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./assets/imgs/imgP2.png"></div></td>
+                                <td><h4>Consumidor J <br><span>Brasil</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./assets/imgs/imgP3.png"></div></td>
+                                <td><h4>Consumidora L <br><span>Brasil</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./assets/imgs/imgP4.png"></div></td>
+                                <td><h4>Consumidor O <br><span>Uruguai</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./assets/imgs/imgP5.png"></div></td>
+                                <td><h4>Consumidora V <br><span>Brasil</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./assets/imgs/imgP6.png"></div></td>
+                                <td><h4>Consumidora B <br><span>Argentina</span></h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
